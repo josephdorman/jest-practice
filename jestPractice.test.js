@@ -1,4 +1,4 @@
-import {capitalize, reverse} from "./jestPractice";
+import {capitalize, reverse, calculator} from "./jestPractice";
 
 test('Capitalize first letter (1)', () => {
   expect(capitalize('minecraft')).toBe('Minecraft');
