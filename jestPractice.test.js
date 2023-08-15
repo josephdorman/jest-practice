@@ -48,6 +48,10 @@ test('CaesarChipher wraps from z to a', () => {
   expect(caesarChipher(5, 'zombies')).toBe('etrgnjx');
 });
 
+test('CaesarChipher wraps from z to a in a sentence', () => {
+  expect(caesarChipher(5, 'zombies are very scary')).toBe('etrgnjx fwj ajwd xhfwd');
+});
+
 
 
 
