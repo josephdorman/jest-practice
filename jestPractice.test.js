@@ -74,7 +74,10 @@ test('CaesarChipher works with puncuation', () => {
 
 // Analyze array tests
 test('Analyze array returns average', () => {
-  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toBe(4);
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]))
+  .toEqual(expect.objectContaining({
+    average: 4
+  }))
 });
 
 
