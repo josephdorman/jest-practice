@@ -44,5 +44,11 @@ test('CaesarChipher one sentence', () => {
   expect(caesarChipher(5, 'minecraft is fun')).toBe('rnsjhwfky nx kzs');
 });
 
+test('CaesarChipher wraps from z to a', () => {
+  expect(caesarChipher(5, 'zombies')).toBe('etrgnjx');
+});
+
+
+
 
 
