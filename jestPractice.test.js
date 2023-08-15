@@ -1,4 +1,4 @@
-import {capitalize, reverse, calculator} from "./jestPractice";
+import {capitalize, reverse, calculator, caesarChipher} from "./jestPractice";
 
 test('Capitalize first letter (1)', () => {
   expect(capitalize('minecraft')).toBe('Minecraft');
@@ -31,3 +31,8 @@ test('Calculator divide', () => {
 test('Calculator multiply', () => {
   expect(calculator('multiply', 5, 5)).toBe(25);
 });
+
+test('CaesarChipher', () => {
+  expect(caesarChipher(5, 'a')).toBe('f');
+});
+
