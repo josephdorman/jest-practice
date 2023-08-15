@@ -32,7 +32,13 @@ test('Calculator multiply', () => {
   expect(calculator('multiply', 5, 5)).toBe(25);
 });
 
-test('CaesarChipher', () => {
+test('CaesarChipher one letter', () => {
   expect(caesarChipher(5, 'a')).toBe('f');
 });
+
+test('CaesarChipher one word', () => {
+  expect(caesarChipher(5, 'abc')).toBe('fgh');
+});
+
+
 
