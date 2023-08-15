@@ -1,4 +1,4 @@
-import {capitalize, reverse, calculator, caesarChipher} from "./jestPractice";
+import {capitalize, reverse, calculator, caesarChipher, analyzeArray} from "./jestPractice";
 
 // Capitalize tests
 test('Capitalize first letter (1)', () => {
@@ -72,6 +72,10 @@ test('CaesarChipher works with puncuation', () => {
   expect(caesarChipher(5, 'Zombies! Are Scary? Whoa.')).toBe('Etrgnjx! Fwj Xhfwd? Bmtf.');
 });
 
+// Analyze array tests
+test('Analyze array returns average', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toBe(4);
+});
 
 
 
