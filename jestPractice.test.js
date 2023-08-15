@@ -101,6 +101,16 @@ test('Analyze array returns max', () => {
   }))
 });
 
+test('Analyze array returns everything', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]))
+  .toEqual(expect.objectContaining({
+    average: 4,
+    length: 6,
+    min: 1,
+    max: 8
+  }))
+});
+
 
 
 
