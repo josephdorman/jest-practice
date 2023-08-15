@@ -40,5 +40,9 @@ test('CaesarChipher one word', () => {
   expect(caesarChipher(5, 'abc')).toBe('fgh');
 });
 
+test('CaesarChipher one sentence', () => {
+  expect(caesarChipher(5, 'minecraft is fun')).toBe('rnsjhwfky nx kzs');
+});
+
 
 
