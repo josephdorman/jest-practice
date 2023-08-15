@@ -1,5 +1,6 @@
 import {capitalize, reverse, calculator, caesarChipher} from "./jestPractice";
 
+// Capitalize tests
 test('Capitalize first letter (1)', () => {
   expect(capitalize('minecraft')).toBe('Minecraft');
 });
@@ -8,6 +9,7 @@ test('Capitalize first letter (2)', () => {
   expect(capitalize('valorant')).toBe('Valorant');
 });
 
+// Reverse tests
 test('Reverse string (1)', () => {
   expect(reverse('minecraft')).toBe('tfarcenim');
 });
@@ -16,6 +18,7 @@ test('Reverse string (2)', () => {
   expect(reverse('valorant')).toBe('tnarolav');
 });
 
+// Calculator tests
 test('Calculator add', () => {
   expect(calculator('add', 5, 5)).toBe(10);
 });
@@ -32,6 +35,7 @@ test('Calculator multiply', () => {
   expect(calculator('multiply', 5, 5)).toBe(25);
 });
 
+// Caesar Chipher tests
 test('CaesarChipher one letter', () => {
   expect(caesarChipher(5, 'a')).toBe('f');
 });
