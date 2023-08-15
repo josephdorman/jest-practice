@@ -87,6 +87,13 @@ test('Analyze array returns length', () => {
   }))
 });
 
+test('Analyze array returns min', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]))
+  .toEqual(expect.objectContaining({
+    min: 1
+  }))
+});
+
 
 
 
