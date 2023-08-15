@@ -56,6 +56,12 @@ test('CaesarChipher a capital letter', () => {
   expect(caesarChipher(5, 'A')).toBe('F');
 });
 
+test('CaesarChipher capitals in a word', () => {
+  expect(caesarChipher(5, 'MineCraft')).toBe('RnsjHwfky');
+});
+
+
+
 
 
 
