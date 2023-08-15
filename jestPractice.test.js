@@ -65,7 +65,7 @@ test('CaesarChipher capitals in a sentence', () => {
 });
 
 test('CaesarChipher works with puncuation', () => {
-  expect(caesarChipher(5, 'Zombies! Are scary? Whoa.')).toBe('Etrgnjx! Fwj Xhfwd? Bmtf.');
+  expect(caesarChipher(5, 'Zombies! Are Scary? Whoa.')).toBe('Etrgnjx! Fwj Xhfwd? Bmtf.');
 });
 
 
