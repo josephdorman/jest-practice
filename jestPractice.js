@@ -71,4 +71,56 @@ function caesarChipher (shift, string) {
   return newWord;
 }
 
-export {capitalize, reverse, calculator, caesarChipher};
+function arrayAverage (array) {
+  let average = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    average += array[i];
+  }
+
+  average /= array.length;
+
+  return average;
+}
+
+function arrayMin (array) {
+  let min = array[0];
+
+  for (let i = 0; i < array.length; i++) {
+    if (min > array[i]) {
+      min = array[i];
+    }
+  }
+
+  return min;
+}
+
+function arrayMax (array) {
+  let max = array[0];
+
+  for (let i = 0; i < array.length; i++) {
+    if (max < array[i]) {
+      max = array[i];
+    }
+  }
+
+  return max;
+}
+
+function analyzeArray (array) {
+  const object = {
+    average: 0,
+    length: 0,
+    min: 0,
+    max: 0
+  }
+
+  object.average = arrayAverage(array);
+  object.length = array.length;
+  object.min = arrayMin(array);
+  object.max = arrayMax(array);
+
+  return object;
+}
+
+export {capitalize, reverse, calculator, caesarChipher, analyzeArray};
