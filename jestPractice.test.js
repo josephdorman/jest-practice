@@ -80,6 +80,13 @@ test('Analyze array returns average', () => {
   }))
 });
 
+test('Analyze array returns length', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]))
+  .toEqual(expect.objectContaining({
+    length: 6
+  }))
+});
+
 
 
 
